@@ -1,9 +1,15 @@
 import "./App.css";
 
+import { BiosPortfolio } from "./components/BiosPortfolio"
+import { ThemeProvider } from "./components/ThemeProvider"
+
 function App() {
   return (
-    <h1 className="text-2xl font-bold text-center text-red-900">Hello world</h1>
-  );
+    <ThemeProvider>
+      <BiosPortfolio />
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
+
