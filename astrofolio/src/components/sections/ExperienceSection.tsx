@@ -3,7 +3,7 @@ import { ExperienceEntry } from "../ExperienceEntry"
 export function ExperienceSection() {
   return (
     <div>
-      <h2 className="text-xl mb-4 text-black">EXPERIENCE.LOG</h2>
+      <h2 className="text-xl mb-4 text-black">EXPERIENCE.log</h2>
 
       <div className="space-y-6">
         <ExperienceEntry

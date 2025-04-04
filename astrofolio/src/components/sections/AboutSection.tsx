@@ -1,7 +1,7 @@
 export function AboutSection() {
   return (
     <div>
-      <h2 className="text-xl mb-4 text-black">ABOUT.ME</h2>
+      <h2 className="text-xl mb-4 text-black">ABOUT.ME.txt</h2>
 
       <div className="border border-bios-border p-4 mb-4 bg-bios-dark">
         <p className="mb-2">
@@ -15,7 +15,7 @@ export function AboutSection() {
         </p>
       </div>
       
-      <h3 className="text-lg mb-2 text-black">BIO.TXT</h3>
+      <h3 className="text-lg mb-2 text-black">BIO.txt</h3>
       <div className="flex flex-col md:flex-row border border-bios-border p-4 bg-bios-dark">
         <div className="md:order-2 md:ml-4 flex-shrink-0">
           <img src="/img/profile.jpg" alt="" className="w-32 h-32 border border-bios-border object-cover filter grayscale pixelate"/>
