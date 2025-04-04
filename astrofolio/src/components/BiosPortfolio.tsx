@@ -23,9 +23,8 @@ export function BiosPortfolio() {
           setBootPhase(bootPhase + 1)
         }
       },
-      bootPhase === 0 ? 2000 : 2000,
+      bootPhase === 0 ? 1000 : 500,
     )
-
 
     const cursorInterval = setInterval(() => {
       setShowCursor((prev) => !prev)
@@ -42,16 +41,16 @@ export function BiosPortfolio() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-green-500 font-mono p-4 flex flex-col">
-      <header className="bg-blue-900 text-white p-2 mb-4">
+    <div className="min-h-screen bg-bios-dark text-bios-text font-mono p-4 flex flex-col">
+      <header className="bg-bios-dark text-bios-text p-2 mb-4 border-b border-bios-border">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">./astrofolio V3.0</h1>
+          <h1 className="text-xl font-bold">http://astronautmarkus.dev</h1>
           <p className="text-xs">{new Date().toLocaleString()}</p>
         </div>
       </header>
 
       <div className="flex flex-col md:flex-row flex-1 gap-4">
-        <nav className="bg-gray-900 p-2 md:w-48 space-y-1">
+        <nav className="bg-bios-panel p-2 md:w-48 space-y-1 border border-bios-border">
           <NavItem
             icon={<Terminal size={16} />}
             label="Home"
@@ -84,7 +83,7 @@ export function BiosPortfolio() {
           />
         </nav>
 
-        <main className="flex-1 bg-gray-900 p-4 border border-green-500 overflow-auto">
+        <main className="flex-1 bg-bios-panel p-4 border border-bios-border overflow-auto">
           {currentSection === "home" && <HomeSection showCursor={showCursor} />}
           {currentSection === "about" && <AboutSection />}
           {currentSection === "projects" && <ProjectsSection />}
@@ -93,10 +92,10 @@ export function BiosPortfolio() {
         </main>
       </div>
 
-      <footer className="bg-gray-900 p-2 mt-4 text-xs">
+      <footer className="bg-bios-panel p-2 mt-4 text-black text-xs border border-bios-border">
         <div className="flex justify-between">
-          <span>Press F1 for Help | F10 to Save | ESC to Exit</span>
-          <span>© {new Date().getFullYear()} | Portfolio BIOS v1.0</span>
+          <span>F1: Help | F10: Save | ESC: Exit</span>
+          <span>© {new Date().getFullYear()} | AstronautMarkus_Astrofolio V3.0</span>
         </div>
       </footer>
     </div>
