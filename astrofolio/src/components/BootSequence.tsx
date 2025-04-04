@@ -1,10 +1,10 @@
 export function BootSequence({ phase }: { phase: number }) {
   return (
-    <div className="min-h-screen bg-black text-green-500 font-mono p-8 flex flex-col justify-start">
+    <div className="min-h-screen bg-black text-red-800 font-mono p-8 flex flex-col justify-start">
       {phase >= 0 && (
         <div className="mb-4">
-          <h1 className="text-2xl mb-2">PORTFOLIO BIOS v1.0</h1>
-          <p>Copyright (C) 2023-{new Date().getFullYear()}</p>
+          <h1 className="text-2xl mb-2">ASTRONAUTMARKUS_PORTFOLIO V3.0</h1>
+          <p>Copyright (C) {new Date().getFullYear()}</p>
           <p>All Rights Reserved</p>
         </div>
       )}
@@ -12,8 +12,14 @@ export function BootSequence({ phase }: { phase: number }) {
       {phase >= 1 && (
         <div className="mb-4">
           <p>Performing system check...</p>
-          <p>CPU: Intel i7 @ 3.40GHz</p>
-          <p>Memory Test: 16384K OK</p>
+          <p>CPU: AMD Ryzen 3 2200G (4) @ 3.50 GHz</p>
+          <p>GPU: AMD Radeon Vega 8 Graphics [Integrated]</p>
+          <p>Memory: 7.82 GiB / 21.00 GiB (37%)</p>
+          <p>Swap: 0 B / 10.79 GiB (0%)</p>
+          <p>Disk (/): 19.23 GiB / 66.74 GiB (29%)</p>
+          <p>Disk (/home): 3.36 GiB / 32.55 GiB (10%)</p>
+          <p>Disk (/mnt/hdd-reyes_01): 1022.75 MiB / 1.79 TiB (0%)</p>
+          <p>Local IP: 192.168.1.169/24</p>
         </div>
       )}
 
