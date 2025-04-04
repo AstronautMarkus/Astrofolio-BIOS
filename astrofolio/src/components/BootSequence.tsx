@@ -1,6 +1,6 @@
 export function BootSequence({ phase }: { phase: number }) {
   return (
-    <div className="min-h-screen bg-black text-red-800 font-mono p-8 flex flex-col justify-start">
+    <div className="min-h-screen bg-black text-white font-mono p-8 flex flex-col justify-start">
       {phase >= 0 && (
         <div className="mb-4">
           <h1 className="text-2xl mb-2">ASTRONAUTMARKUS_PORTFOLIO V3.0</h1>

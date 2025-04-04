@@ -5,6 +5,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+
+        bios: {
+
+          dark: "#000080",
+
+          light: "#8080A0",
+
+          highlight: "#00AAFF",
+
+          text: "#FFFFFF",
+
+          warning: "#FFFF00",
+
+          inactive: "#A0A0A0",
+
+          border: "#4040A0",
+
+          black: "#000000",
+        },
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -37,19 +57,6 @@ module.exports = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        green: {
-          500: "#00ff00",
-        },
-        blue: {
-          400: "#4aa8ff",
-          900: "#000084",
-        },
-        amber: {
-          400: "#ffbf00",
-        },
-        yellow: {
-          400: "#ffff00",
         },
       },
       borderRadius: {
