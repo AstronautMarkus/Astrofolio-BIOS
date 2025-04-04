@@ -13,9 +13,9 @@ export default function Header({ location }: { location: { pathname: string } })
   }, []);
 
   return (
-    <header className="bg-bios-dark text-bios-text p-2 mb-4 border-b border-bios-border">
+    <header className="bg-bios-panel text-black p-2 mb-4 border-b border-bios-border">
       <div className="flex justify-between items-center">
-        <h1 className="font-bold text-xs sm:text-xl">
+        <h1 className="text-xs sm:text-xl">
           https://astronautmarkus.dev{displayPath}
         </h1>
         <p className="text-xs">{currentTime}</p>
