@@ -10,6 +10,8 @@ module.exports = {
 
           dark: "#000080",
 
+          panel: "#c9c9c9",
+
           light: "#8080A0",
 
           highlight: "#00AAFF",

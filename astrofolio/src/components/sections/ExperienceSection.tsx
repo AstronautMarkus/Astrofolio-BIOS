@@ -3,39 +3,19 @@ import { ExperienceEntry } from "../ExperienceEntry"
 export function ExperienceSection() {
   return (
     <div>
-      <h2 className="text-xl mb-4 text-blue-400">EXPERIENCE.LOG</h2>
+      <h2 className="text-xl mb-4 text-black">EXPERIENCE.LOG</h2>
 
       <div className="space-y-6">
         <ExperienceEntry
-          title="Senior Frontend Developer"
-          company="Tech Innovations Inc."
-          period="2021 - Present"
+          title="FrontEnd + BackEnd Developer, Professional Internship"
+          company="LastDon Practice Center"
+          period="DEC 2024 - FEB 2025"
           responsibilities={[
-            "Lead a team of 5 developers in building a next-generation SaaS platform",
-            "Implemented CI/CD pipelines reducing deployment time by 40%",
-            "Architected and developed reusable component library used across multiple projects",
-          ]}
-        />
-
-        <ExperienceEntry
-          title="Full Stack Developer"
-          company="Digital Solutions LLC"
-          period="2018 - 2021"
-          responsibilities={[
-            "Developed and maintained multiple client websites and applications",
-            "Integrated third-party APIs and payment gateways",
-            "Optimized database queries resulting in 30% faster page loads",
-          ]}
-        />
-
-        <ExperienceEntry
-          title="Junior Web Developer"
-          company="WebCraft Studios"
-          period="2016 - 2018"
-          responsibilities={[
-            "Created responsive websites for various clients",
-            "Collaborated with designers to implement pixel-perfect UIs",
-            "Maintained and updated existing client websites",
+            "Development of a web application with connection to the MercadoLibre API.",
+            "FrontEnd development with React and Bootstrap CSS.",
+            "BackEnd development with Laravel and MySQL.",
+            "Mentoring new interns with technologies such as Git, GitHub React, Bootstrap CSS, and Laravel.",
+            "Collaboration with office tasks and stock organization.",
           ]}
         />
       </div>
