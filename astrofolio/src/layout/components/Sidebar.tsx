@@ -1,5 +1,5 @@
 import { NavItem } from '../../components/NavItem'
-import { Terminal, Code, User, Briefcase, Mail } from "lucide-react"
+import { Terminal, Code, User, Briefcase, Mail, ChartBar } from "lucide-react"
 import { useLocation } from "react-router-dom"
 
 interface SidebarProps {
@@ -20,6 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ mobileOpen = false }) => {
       <NavItem icon={<Code size={16} />} label="Projects" active={location.pathname === "/projects"} to="/projects" />
       <NavItem icon={<Briefcase size={16} />} label="Experience" active={location.pathname === "/experience"} to="/experience" />
       <NavItem icon={<Mail size={16} />} label="Contact" active={location.pathname === "/contact"} to="/contact" />
+      <NavItem icon={<ChartBar size={16} />} label="Stats" active={location.pathname === "/stats"} to="/stats" />
     </nav>
   )
 }

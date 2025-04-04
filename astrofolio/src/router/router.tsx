@@ -5,6 +5,7 @@ import { AboutSection } from "../components/sections/AboutSection"
 import { ProjectsSection } from "../components/sections/ProjectsSection"
 import { ExperienceSection } from "../components/sections/ExperienceSection"
 import { ContactSection } from "../components/sections/ContactSection"
+import { StatsSection } from "../components/sections/StatsSection"
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "projects", element: <ProjectsSection /> },
       { path: "experience", element: <ExperienceSection /> },
       { path: "contact", element: <ContactSection /> },
+      { path: "stats", element: <StatsSection /> },
     ],
   },
 ])
