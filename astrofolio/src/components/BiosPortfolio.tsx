@@ -16,17 +16,17 @@ export function BiosPortfolio() {
   const [currentSection, setCurrentSection] = useState("home")
 
   useEffect(() => {
-    // Simulate boot sequence
+
     const bootSequence = setTimeout(
       () => {
         if (bootPhase < 5) {
           setBootPhase(bootPhase + 1)
         }
       },
-      bootPhase === 0 ? 1000 : 500,
+      bootPhase === 0 ? 2000 : 2000,
     )
 
-    // Blinking cursor effect
+
     const cursorInterval = setInterval(() => {
       setShowCursor((prev) => !prev)
     }, 500)
@@ -45,7 +45,7 @@ export function BiosPortfolio() {
     <div className="min-h-screen bg-black text-green-500 font-mono p-4 flex flex-col">
       <header className="bg-blue-900 text-white p-2 mb-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">PORTFOLIO BIOS v1.0</h1>
+          <h1 className="text-xl font-bold">./astrofolio V3.0</h1>
           <p className="text-xs">{new Date().toLocaleString()}</p>
         </div>
       </header>
