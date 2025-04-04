@@ -1,10 +1,9 @@
 import { useState } from "react"
-import { Terminal, Code, User, Briefcase, Mail } from "lucide-react"
-import { NavItem } from "../components/NavItem"
 import { Outlet, useLocation } from "react-router-dom"
 
+import Sidebar from "./components/Sidebar"
+
 export function Layout() {
-  const [currentSection, setCurrentSection] = useState("home")
   const location = useLocation()
 
   return (
@@ -17,38 +16,7 @@ export function Layout() {
       </header>
 
       <div className="flex flex-col md:flex-row flex-1 gap-4">
-        <nav className="text-black bg-bios-panel p-2 md:w-48 space-y-1 border border-bios-border">
-          <NavItem
-            icon={<Terminal size={16} />}
-            label="Home"
-            active={location.pathname === "/"}
-            to="/"
-          />
-          <NavItem
-            icon={<User size={16} />}
-            label="About"
-            active={location.pathname === "/about"}
-            to="/about"
-          />
-          <NavItem
-            icon={<Code size={16} />}
-            label="Projects"
-            active={location.pathname === "/projects"}
-            to="/projects"
-          />
-          <NavItem
-            icon={<Briefcase size={16} />}
-            label="Experience"
-            active={location.pathname === "/experience"}
-            to="/experience"
-          />
-          <NavItem
-            icon={<Mail size={16} />}
-            label="Contact"
-            active={location.pathname === "/contact"}
-            to="/contact"
-          />
-        </nav>
+        <Sidebar />
 
         <main className="flex-1 bg-bios-panel p-4 border border-bios-border overflow-auto">
           <Outlet />
