@@ -16,7 +16,7 @@ export default function Header({ location }: { location: { pathname: string } })
     <header className="bg-bios-dark text-bios-text p-2 mb-4 border-b border-bios-border">
       <div className="flex justify-between items-center">
         <h1 className="font-bold text-xs sm:text-xl">
-          http://astronautmarkus.dev{displayPath}
+          https://astronautmarkus.dev{displayPath}
         </h1>
         <p className="text-xs">{currentTime}</p>
       </div>

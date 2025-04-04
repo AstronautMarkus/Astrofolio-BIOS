@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom"
 
 import Header from "./components/Header"
 import Sidebar from "./components/Sidebar"
+import Footer from "./components/Footer"
 
 export function Layout() {
   const location = useLocation()
@@ -15,12 +16,8 @@ export function Layout() {
           <Outlet />
         </main>
       </div>
-      <footer className="bg-bios-panel p-2 mt-4 text-black text-xs border border-bios-border">
-        <div className="flex justify-between">
-          <span>F1: Help | F10: Save | ESC: Exit</span>
-          <span>© {new Date().getFullYear()} | AstronautMarkus_Astrofolio V3.0</span>
-        </div>
-      </footer>
+
+      <Footer />
     </div>
   )
 }
