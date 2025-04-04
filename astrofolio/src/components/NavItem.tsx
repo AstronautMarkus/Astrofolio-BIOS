@@ -12,8 +12,8 @@ interface NavItemProps {
 export function NavItem({ icon, label, active, onClick }: NavItemProps) {
   return (
     <button
-      className={`flex items-center gap-2 w-full text-left p-1 hover:bg-gray-800 ${
-        active ? "bg-blue-900 text-white" : ""
+      className={`flex items-center gap-2 w-full text-left p-1 hover:bg-bios-dark hover:text-bios-highlight ${
+        active ? "bg-bios-dark text-bios-highlight" : ""
       }`}
       onClick={onClick}
     >

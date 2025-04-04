@@ -5,6 +5,6 @@ interface ThemeProviderProps {
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  return <div className="min-h-screen bg-black">{children}</div>
+  return <div className="min-h-screen bg-bios-dark">{children}</div>
 }
 
