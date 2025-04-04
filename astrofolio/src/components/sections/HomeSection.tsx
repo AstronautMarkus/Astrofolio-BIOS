@@ -1,13 +1,8 @@
-interface HomeSectionProps {
-  showCursor: boolean
-}
-
-export function HomeSection({ showCursor }: HomeSectionProps) {
+export function HomeSection() {
   return (
     <div className="h-full">
       <div className="text-xl mb-6">
         <span className="text-bios-highlight">&gt;</span> Welcome to my portfolio
-        {showCursor && <span className="text-bios-highlight">▋</span>}
       </div>
 
       <pre className="text-bios-text mb-6">astronautmarkus</pre>

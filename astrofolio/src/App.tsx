@@ -1,15 +1,15 @@
 import "./App.css";
 
-import { BiosPortfolio } from "./components/BiosPortfolio"
-import { ThemeProvider } from "./components/ThemeProvider"
+import React from "react";
+import { AppRouter } from "./router/router";
 
 function App() {
   return (
-    <ThemeProvider>
-      <BiosPortfolio />
-    </ThemeProvider>
-  )
+    <React.StrictMode>
+      <AppRouter />
+    </React.StrictMode>
+  );
 }
 
-export default App
+export default App;
 
