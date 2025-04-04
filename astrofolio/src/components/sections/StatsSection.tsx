@@ -1,7 +1,7 @@
 import { useStats } from "../hooks/UseStats";
 
 export function StatsSection() {
-  const stats = useStats();
+  const { stats, codingActivity } = useStats();
 
   return (
     <div>
@@ -25,7 +25,22 @@ export function StatsSection() {
             ))}
           </ul>
         ) : (
-          <p>Loading stats...</p>
+          <p>Loading most languages used...</p>
+        )}
+      </div>
+
+      <h3 className="text-lg font-bold mb-2 text-black">CODING_ACTIVITY.LOG [all time]</h3>
+      <div
+        className="border border-bios-border p-4 bg-bios-dark"
+        style={{ border: "1px solid #ccc" }}
+      >
+        {codingActivity ? (
+          <ul>
+            <li>Total Time: {codingActivity.human_readable_total}</li>
+            <li>Daily Average: {codingActivity.human_readable_daily_average}</li>
+          </ul>
+        ) : (
+          <p>Loading coding activity...</p>
         )}
       </div>
     </div>
