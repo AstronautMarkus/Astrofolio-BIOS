@@ -38,6 +38,9 @@ export function HomeSection() {
           <span className="text-bios-warning">unusual combinations</span> to achieve exotic functionalities and learn new things.
         </p>
       </div>
+
+      <p className="text-black hidden md:block">Note: Use the arrow keys in the sidebar menu to navigate and press Enter to select a page.</p>
+
     </div>
   )
 }
